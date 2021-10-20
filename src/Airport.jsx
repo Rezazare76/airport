@@ -15,10 +15,6 @@ class Airport extends React.Component {
       display: "none",
       TableList: [],
     };
-    this.handleChange = this.handleChange.bind(this);
-  }
-  handleChange(event) {
-    this.setState({ value: event.target.value });
   }
 
   openSearch = () => {
