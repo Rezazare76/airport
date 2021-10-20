@@ -1,0 +1,22 @@
+.formheader {
+  align-self: center;
+  border-bottom: 2px solid var(--main-color);
+  font-size: 1rem;
+  font-family: "Vazir-bold";
+  padding: 1rem 1rem 0.4rem;
+}
+
+.form-input-container {
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0.5rem 0;
+}
+
+.checkbox-container {
+  color: rgb(141, 141, 143);
+  align-self: flex-end;
+  padding: 2rem 3rem;
+}
+.form-btn {
+  text-align: center;
+}

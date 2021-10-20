@@ -1,0 +1,33 @@
+.search {
+  background-color: rgb(238, 238, 238);
+  padding: 1rem;
+  margin: 0 5px;
+  border: 2px solid rgb(225, 227, 230);
+}
+.search span {
+  vertical-align: sub;
+  cursor: pointer;
+}
+.click-search {
+  color: var(--main-color);
+}
+
+.click-search label {
+  color: black;
+}
+.hidden-search {
+  display: none;
+  padding-top: 1rem;
+}
+
+.search-btn {
+  text-align: center;
+}
+
+.search-btn button {
+  width: 10rem;
+}
+.search-btn .left-button {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}

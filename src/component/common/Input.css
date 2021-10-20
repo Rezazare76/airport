@@ -1,0 +1,10 @@
+.form_input {
+  border: 2px solid rgb(225, 227, 230);
+  color: rgb(141, 141, 143);
+  padding: 0.9rem 1rem 0.9rem;
+  width: 28%;
+}
+.form_input:focus {
+  outline: none;
+  box-shadow: 2px 5px 20px 1px var(--main-color);
+}

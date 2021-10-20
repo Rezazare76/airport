@@ -1,0 +1,59 @@
+@media screen and (max-width: 900px) {
+  .open-menu-btn {
+    display: block;
+  }
+  .close-menu {
+    display: block;
+    font-size: 3rem;
+    text-align: left;
+    padding: 0.2rem 3rem;
+    cursor: pointer;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    overflow: auto;
+  }
+  .menu div {
+    padding: 0.9rem 0;
+  }
+  .menu span {
+    position: absolute;
+    right: 20%;
+  }
+  .header-user-email span {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-input-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .form_input,
+  .form-dropdown {
+    margin: 0.2rem 0;
+  }
+  .form_input {
+    width: 17.2rem;
+  }
+  .form-dropdown {
+    width: 19.4rem;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .menu {
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .menu {
+    flex-grow: 2;
+  }
+}

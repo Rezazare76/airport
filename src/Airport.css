@@ -1,0 +1,58 @@
+:root {
+  --main-color: rgb(109, 22, 109);
+  --text-color: white;
+  --backbutton-color: rgb(34, 34, 34);
+}
+* {
+  font-family: "Vazir-thin", sans-serif;
+}
+.container {
+  height: 100vh;
+}
+.display-column {
+  flex-direction: column;
+}
+.display-flex {
+  display: flex;
+}
+
+/************header***************/
+
+.header {
+  background-image: linear-gradient(to right, var(--main-color) 60%, red);
+  color: var(--text-color);
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.header .IR-Flag {
+  border-radius: 50%;
+}
+.header-left-side {
+  padding: 0 4%;
+}
+.header-user-email {
+  padding: 0.2rem 4rem;
+}
+/***********main**************/
+.main {
+  flex-grow: 1;
+}
+/***********section**************/
+.section {
+  flex-grow: 1;
+  padding-bottom: 2rem;
+}
+/**********aside*********/
+.open-menu-btn {
+  font-size: 30px;
+  background-image: linear-gradient(to right, var(--main-color) 30%, red);
+  padding: 0.5rem 2rem;
+  border-bottom-left-radius: 20%;
+  color: var(--text-color);
+  cursor: pointer;
+  align-self: flex-end;
+  display: none;
+}
+.close-menu {
+  display: none;
+}
