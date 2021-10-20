@@ -19,3 +19,8 @@ button {
   margin: 5px;
   border-radius: 2px;
 }
+.right-button:active,
+.left-button:active {
+  transform: scale(0.98);
+  box-shadow: 2px 5px 30px 3px var(--main-color);
+}
