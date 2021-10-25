@@ -1,16 +1,21 @@
 .menu {
   font-family: "Vazir-Bold";
   color: var(--text-color);
-  background-color: var(--main-color);
-  flex-grow: 0.4;
+  background-color: rgb(78, 27, 112);
+  flex-grow: 0.5;
   transition: 0.5s;
 }
 .menu div {
-  padding: 0.9rem;
+  padding: 1.5rem;
+  position: relative;
 }
-.menu div:hover {
-  background-color: rgb(101, 25, 151);
+.menu .MenuIcon {
+  position: absolute;
+  display: inline-block;
+  right: 1rem;
 }
-.menu span {
-  padding-left: 10%;
+.menu .MenuContent {
+  position: absolute;
+  right: 4rem;
+  display: inline-block;
 }

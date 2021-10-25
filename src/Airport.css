@@ -1,10 +1,17 @@
 :root {
-  --main-color: rgb(109, 22, 109);
+  --main-color: rgb(109, 50, 148);
   --text-color: white;
   --backbutton-color: rgb(34, 34, 34);
 }
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+}
 * {
-  font-family: "Vazir-thin", sans-serif;
+  font-family: "Vazir", sans-serif;
 }
 .container {
   height: 100vh;
@@ -15,23 +22,30 @@
 .display-flex {
   display: flex;
 }
-
 /************header***************/
-
 .header {
-  background-image: linear-gradient(to right, var(--main-color) 60%, red);
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    rgb(114, 42, 133) 30%,
+    red
+  );
   color: var(--text-color);
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 .header .IR-Flag {
   border-radius: 50%;
+  padding: 0.2rem 0;
 }
 .header-left-side {
   padding: 0 4%;
 }
 .header-user-email {
   padding: 0.2rem 4rem;
+}
+.header-user-email .user-email {
+  padding: 0 0.5rem;
 }
 /***********main**************/
 .main {
@@ -42,7 +56,7 @@
   flex-grow: 1;
   padding-bottom: 2rem;
 }
-/**********aside*********/
+/**********Menu*********/
 .open-menu-btn {
   font-size: 30px;
   background-image: linear-gradient(to right, var(--main-color) 30%, red);

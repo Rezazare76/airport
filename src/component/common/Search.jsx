@@ -13,10 +13,14 @@ const Search = (props) => {
         <div class={props.hidden_class} style={props.hidden_container_style}>
           <Input
             type="text"
-            class="form_input"
+            class="form_input right_search_input"
             placeholder="جستجو با نام فارسی/نام انگلیسی و یاتا کد"
           />
-          <Input type="text" class="form_input" placeholder="نوع" />
+          <Input
+            type="text"
+            class="form_input left_search_input"
+            placeholder="نوع"
+          />
           <br />
           <Radio class="search-radio" label="فعال" />
           <Radio class="search-radio" label="غیرفعال" />

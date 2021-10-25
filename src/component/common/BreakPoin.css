@@ -13,19 +13,20 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
-    text-align: center;
+    height: 100vh;
     z-index: 1;
     overflow: auto;
   }
   .menu div {
-    padding: 0.9rem 0;
+    padding: 2rem 0;
   }
-  .menu span {
-    position: absolute;
-    right: 20%;
+  .menu .MenuIcon {
+    right: 30%;
   }
-  .header-user-email span {
+  .menu .MenuContent {
+    right: 40%;
+  }
+  .header-user-email .user-email {
     display: none;
   }
 }

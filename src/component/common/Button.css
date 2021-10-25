@@ -1,8 +1,8 @@
 button {
-  padding: 10px 0;
+  padding: 0.6rem 0;
   width: 20rem;
   border-radius: 2px;
-  margin: 5px 5px 20px;
+  margin: 5px 10px 20px;
 }
 .right-button {
   background-color: var(--backbutton-color);
@@ -15,9 +15,9 @@ button {
   background-color: transparent;
 }
 .searchButton {
-  padding: 8px 60px;
-  margin: 5px;
-  border-radius: 2px;
+  padding: 1rem 60px;
+  margin: 5px 10px;
+  border-radius: 5px;
 }
 .right-button:active,
 .left-button:active {

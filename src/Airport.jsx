@@ -2,6 +2,8 @@ import React from "react";
 import "./Airport.css";
 import Dropdown from "./component/common/Dropdown";
 import IR_Flag from "./IR.png";
+import Donyaro_logo from "./Logo/Donyaro_Logo.png";
+import HiddenEmail from "./component/common/HiddenEmail";
 import Menu from "./component/common/Menu";
 import Search from "./component/common/Search";
 import "./component/common/BreakPoin.css";
@@ -14,6 +16,8 @@ class Airport extends React.Component {
       navwidth: 0,
       display: "none",
       TableList: [],
+      overflow_y: "auto",
+      visibility: "hidden",
     };
   }
 
@@ -32,15 +36,29 @@ class Airport extends React.Component {
   openMenu = () => {
     this.setState({
       navwidth: "100%",
+      overflow_y: "hidden",
     });
   };
 
   closeMenu = () => {
     this.setState({
-      navwidth: "0px",
+      navwidth: "0",
+      overflow_y: "auto",
     });
   };
 
+  ShowUserEmail = () => {
+    if (this.state.visibility == "hidden") {
+      this.setState({
+        visibility: "visible",
+      });
+    }
+    if (this.state.visibility == "visible") {
+      this.setState({
+        visibility: "hidden",
+      });
+    }
+  };
   componentDidMount() {
     fetch("https://reqres.in/api/users?page=2")
       .then((res) => {
@@ -53,7 +71,10 @@ class Airport extends React.Component {
 
   render() {
     return (
-      <div class="container display-flex display-column">
+      <main
+        class="container display-flex display-column"
+        style={{ overflowY: this.state.overflow_y }}
+      >
         <div class="header display-flex">
           <div class="header-left-side display-flex">
             <Dropdown
@@ -65,16 +86,25 @@ class Airport extends React.Component {
             <img
               class="IR-Flag"
               src={IR_Flag}
-              alt="Iran"
-              width="20px"
-              height="20px;"
+              alt="Iran_Flag"
+              width="20rem"
+              height="20rem"
             />
             <div class="fas header-user-email">
-              <span>programmer1376@gmail.com</span>
-              &#xf2bd;
+              <span class="user-email">programmer1376@gmail.com</span>
+              <HiddenEmail
+                onClick={this.ShowUserEmail}
+                hidden_style={{ visibility: this.state.visibility }}
+              />
             </div>
           </div>
-          <div>دنیارو</div>
+
+          <img
+            src={Donyaro_logo}
+            alt="Donyaro_Logo"
+            width="100rem"
+            height="25rem"
+          />
         </div>
 
         <div class="main display-flex">
@@ -107,13 +137,12 @@ class Airport extends React.Component {
           <Menu
             menu_class="menu display-flex display-column"
             menu_style={{ width: this.state.navwidth }}
-            menu_dir="rtl"
             close_menu_class="close-menu"
             close_menu_onClick={this.closeMenu}
             close_menu_value="&times;"
           />
         </div>
-      </div>
+      </main>
     );
   }
 }

@@ -4,6 +4,7 @@
   margin: 0 5px;
   border: 2px solid rgb(225, 227, 230);
 }
+
 .search span {
   vertical-align: sub;
   cursor: pointer;
@@ -19,7 +20,13 @@
   display: none;
   padding-top: 1rem;
 }
-
+.right_search_input {
+  width: 46% !important;
+  margin-left: 10px;
+}
+.left_search_input {
+  width: 25% !important;
+}
 .search-btn {
   text-align: center;
 }

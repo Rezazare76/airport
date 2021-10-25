@@ -2,15 +2,15 @@
   background-color: var(--main-color);
   border: none;
   color: var(--text-color);
-  font-size: 15px;
 }
 .form-dropdown {
   border: 2px solid rgb(225, 227, 230);
   color: rgb(141, 141, 143);
-  padding: 0.9rem 1rem 0.9rem;
+  padding: 1.2rem 1rem 1.2rem;
   width: 28%;
+  border-radius: 5px;
 }
 select:focus {
-  outline-color: white;
-  box-shadow: 2px 5px 20px 1px var(--main-color);
+  outline: none;
+  box-shadow: 2px 3px 20px 1px var(--main-color);
 }

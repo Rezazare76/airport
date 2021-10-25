@@ -12,7 +12,7 @@ const Form = (props) => {
         &#9776;
       </span>
       <div class="formheader">مدیریت فرودگاه ها</div>
-      <div class="display-flex display-column">
+      <div class="display-flex display-column FormMain">
         <div class="form-input-container display-flex">
           <Dropdown
             class="form-dropdown"

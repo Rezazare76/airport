@@ -1,4 +1,9 @@
 .form-checkbox {
-  width: 0.5rem;
-  transform: scale(1.5);
+  width: 0.6rem;
+  transform: scale(2);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.label {
+  cursor: pointer;
 }
