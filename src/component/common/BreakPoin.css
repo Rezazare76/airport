@@ -46,6 +46,10 @@
   .form-dropdown {
     width: 19.4rem;
   }
+  .right_search_input,
+  .left_search_input {
+    width: 90% !important;
+  }
 }
 
 @media screen and (max-width: 1260px) {

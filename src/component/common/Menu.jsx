@@ -17,8 +17,8 @@ const Menu = (props) => {
   ];
   return (
     <div class={props.menu_class} style={props.menu_style}>
-      <a class={props.close_menu_class} onClick={props.close_menu_onClick}>
-        {props.close_menu_value}
+      <a class={props.close_menu_class}>
+        <span onClick={props.close_menu_onClick}>{props.close_menu_value}</span>
       </a>
       {menuList.map((item, itemIndx) => {
         return (

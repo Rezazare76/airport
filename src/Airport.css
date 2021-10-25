@@ -22,6 +22,9 @@
 .display-flex {
   display: flex;
 }
+.cursor {
+  cursor: pointer;
+}
 /************header***************/
 .header {
   background-image: linear-gradient(

@@ -18,6 +18,7 @@ class Airport extends React.Component {
       TableList: [],
       overflow_y: "auto",
       visibility: "hidden",
+      search_icon: "keyboard_arrow_up",
     };
   }
 
@@ -25,11 +26,13 @@ class Airport extends React.Component {
     if (this.state.display == "none") {
       this.setState({
         display: "block",
+        search_icon: "keyboard_arrow_down",
       });
     }
     if (this.state.display == "block") {
       this.setState({
         display: "none",
+        search_icon: "keyboard_arrow_up",
       });
     }
   };
@@ -114,7 +117,8 @@ class Airport extends React.Component {
               OpenNav={this.openMenu}
             />
             <Search
-              search_container="search"
+              search_icon={this.state.search_icon}
+              search_container="search_container"
               openSearch={this.openSearch}
               hidden_container_style={{ display: this.state.display }}
               hidden_class="hidden-search"
@@ -135,7 +139,7 @@ class Airport extends React.Component {
             />
           </div>
           <Menu
-            menu_class="menu display-flex display-column"
+            menu_class="menu display-flex display-column "
             menu_style={{ width: this.state.navwidth }}
             close_menu_class="close-menu"
             close_menu_onClick={this.closeMenu}

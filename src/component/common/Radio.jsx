@@ -4,7 +4,7 @@ const Radio = (props) => {
   return (
     <label>
       {" "}
-      <input class={props.class} type="radio" />
+      <input class={props.class} type="radio" name={props.name} />
       {props.label}
     </label>
   );

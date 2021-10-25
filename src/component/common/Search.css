@@ -1,23 +1,23 @@
-.search {
+.search_container {
   background-color: rgb(238, 238, 238);
   padding: 1rem;
   margin: 0 5px;
   border: 2px solid rgb(225, 227, 230);
+  transition: 0.5s;
 }
 
 .search span {
   vertical-align: sub;
   cursor: pointer;
 }
-.click-search {
+.hidden_search_content {
   color: var(--main-color);
 }
 
-.click-search label {
+.hidden_search_content label {
   color: black;
 }
 .hidden-search {
-  display: none;
   padding-top: 1rem;
 }
 .right_search_input {

@@ -15,35 +15,39 @@ const Form = (props) => {
       <div class="display-flex display-column FormMain">
         <div class="form-input-container display-flex">
           <Dropdown
-            class="form-dropdown"
+            class="form-dropdown cursor"
             area1="کشور"
             area2="ایران"
             area3="ترکیه"
           />
-          <Input class="form_input" type="text" placeholder="نام به فارسی" />
           <Input
-            class="form_input"
+            class="form_input cursor"
+            type="text"
+            placeholder="نام به فارسی"
+          />
+          <Input
+            class="form_input cursor"
             type="text"
             placeholder="نام به زبان انگلیسی"
           />
         </div>
         <div class="form-input-container display-flex">
           <Dropdown
-            class="form-dropdown"
+            class="form-dropdown cursor"
             area1="شهر"
             area2="شیراز"
             area3="تهران"
           />
-          <Input class="form_input" type="text" placeholder="یاتاکد" />
-          <Input class="form_input" type="text" placeholder="نوع" />
+          <Input class="form_input cursor" type="text" placeholder="یاتاکد" />
+          <Input class="form_input cursor" type="text" placeholder="نوع" />
         </div>
       </div>
       <div class="checkbox-container">
-        <CheckBox class="form-checkbox" label="فعال" />
+        <CheckBox class="form-checkbox cursor" label="فعال" />
       </div>
       <div class="form-btn">
-        <Button value="فرم را تکمیل نمایید " class="left-button" />
-        <Button value="بازگشت" class="right-button" />
+        <Button value="فرم را تکمیل نمایید " class="left-button cursor" />
+        <Button value="بازگشت" class="right-button cursor" />
       </div>
     </div>
   );
